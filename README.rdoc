@@ -14,6 +14,6 @@ This gem will help you to add specific score or weights to a list of results or 
 
 == Copyright
 
-Copyright (c) 2013 JoseLuis Torres. See LICENSE.txt for
+Copyright (c) 2013 @ruby_gdl JoseLuis Torres. See LICENSE.txt for
 further details.
 

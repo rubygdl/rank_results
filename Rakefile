@@ -15,12 +15,12 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "rank_results"
-  gem.homepage = "http://github.com/joseluistorres/rank_results"
+  gem.homepage = "https://github.com/rubygdl/rank_results"
   gem.license = "MIT"
   gem.summary = %Q{It will add a score to a result with a rule given for the object }
   gem.description = %Q{It will add a score to a result with a rule given for the object}
   gem.email = "jl@joseluistorres.me"
-  gem.authors = ["JoseLuis Torres"]
+  gem.authors = ["JoseLuis Torres", "Javier Cervantes"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
