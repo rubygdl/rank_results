@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/rank_results.rb",
     "lib/rank_results/rule.rb",
+    "rank_results.gemspec",
     "test/helper.rb",
     "test/rank_results_test.rb",
     "test/rules/instructors_followed_rule.rb",
