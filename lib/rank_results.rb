@@ -3,11 +3,11 @@ require 'rank_results/rule'
 module RankResults
   class Valuator
 
-    def self.rules
+    def rules
       @rules ||= []
     end
 
-    def self.add_rule(rule)
+    def add_rule(rule)
       self.rules << rule
     end
 
@@ -16,7 +16,7 @@ module RankResults
     end
 
     def rank
-      Valuator.rules.inject(0) { |result, rule| result + rule.apply } 
+      rules.inject(0) { |result, rule| result + rule.apply } 
     end
 
   end
