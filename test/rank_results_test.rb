@@ -1,6 +1,6 @@
 require 'helper'
 Dir["test/rules/*.rb"].each {|file| require './' + file }
-Dir["test/test_classes/*.rb"].each {|file| require './' + file }
+Dir["test/classes/*.rb"].each {|file| require './' + file }
 
 describe RankResults::Valuator do
   before do
@@ -13,7 +13,15 @@ describe RankResults::Valuator do
     @valuator.add_rule instructor_followed_rule
   end
 
-  it "testing first rule" do
+  it "should return a LikeRule instance" do
+    @valuator.rules[0].must_be_instance_of LikesRule
+  end
+
+  it "should return a InstructorsFollowedRule instance" do
+    @valuator.rules[1].must_be_instance_of InstructorsFollowedRule
+  end
+
+  it "testing rank results" do
     @valuator.rank.must_equal 1020
   end
 
